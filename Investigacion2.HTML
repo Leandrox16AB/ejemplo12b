@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutorial de Tablas en HTML</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tutorial de Tablas en HTML</h1>
+
+<h2>¿Cómo crear una tabla en HTML?</h2>
+<p>Para crear una tabla básica, utilizamos las siguientes etiquetas:</p>
+<ul>
+    <li><code><table></code>: Define el inicio y el fin de la tabla.</li>
+    <li><code><tr></code>: Define una fila en la tabla.</li>
+    <li><code><th></code>: Define una celda de encabezado.</li>
+    <li><code><td></code>: Define una celda de datos.</li>
+</ul>
+
+<h2>Ejemplo de una tabla básica:</h2>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+    </tr>
+    <tr>
+        <td>Juan</td>
+        <td>Pérez</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>María</td>
+        <td>García</td>
+        <td>30</td>
+    </tr>
+</table>
+
+<h2>¿Cómo crear un horario en HTML?</h2>
+<p>Un horario es simplemente una tabla con días de la semana como encabezados y horas como filas. Puedes personalizarlo con colores y estilos para hacerlo más atractivo.</p>
+
+<h2>¿Cómo poner color al fondo de las celdas?</h2>
+<p>Utilizamos la propiedad CSS <code>background-color</code> para asignar un color a una celda. Por ejemplo:</p>
+<code><td style="background-color: lightblue;">Contenido de la celda</td></code>
+
+<h2>¿Cómo poner bordes de color en HTML?</h2>
+<p>Utilizamos la propiedad CSS <code>border</code> para agregar bordes a las celdas. Por ejemplo:</p>
+<code><td style="border: 2px solid red;">Contenido de la celda</td></code>
+
+<h2>Etiquetas utilizadas en HTML para crear tablas:</h2>
+<ul>
+    <li><code><table></code></li>
+    <li><code><tr></code></li>
+    <li><code><th></code></li>
+    <li><code><td></code></li>
+</ul>
+
+<p>**Nota:** Para personalizar aún más tus tablas, puedes explorar otras propiedades CSS como <code>font-size</code>, <code>text-align</code>, <code>width</code>, etc.</p>
+
+</body>
+</html>

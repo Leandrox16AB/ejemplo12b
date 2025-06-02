@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+<TITLE>COMO_CREAR_UN_MENÚ_DESPEGABLE_HTML</TITLE>
+</HEAD>
+<BODY>
+<CENTER>
+<H1>¿MENÚ DESPEGABLE EN HTML?</H1>
+<HR>
+<P>
+<CENTER>
+<H3>
+Un menú desplegable en HTML es un elemento de la interfaz de usuario que permite al usuario seleccionar una opción de una lista de opciones que se despliega cuando se activa. Este tipo de menú suele estar implementado mediante elementos HTML como (select) para listas de opciones, o mediante listas desordenadas (ul) y listas de elementos (li), a menudo acompañadas de JavaScript y CSS para la funcionalidad de despliegue. Los menús desplegables son comúnmente utilizados en formularios, barras de navegación, y otras interfaces donde es necesario ofrecer una selección de opciones sin ocupar demasiado espacio en la pantalla.
+En este post vas aprender a hacer un menú de navegación en HTML. Sin duda alguna, la calidad estética y funcional de un menú de navegación determinan si un usuario continúa en la página o por el contrario sale al instante y, por este motivo, es tan importante hacer un menú de navegación en HTML atractivo y útil.
+
+/hacer un menú de navegación en html	
+¿Qué encontrarás en este post?
+Listas en HTML
+¿Cómo hacer un menú de navegación en HTML?
+Aplicar estilo al menú de navegación con CSS
+Resultado del menú de navegación
+Listas en HTML
+Para empezar debes conocer las etiquetas de lista, que te permiten crear el menú de navegación fácilmente.
+
+Existen dos tipos de listas: ordenadas y no ordenadas. Para el menú HTML, trabajaremos con las últimas. La etiqueta de lista no ordenada es <ul></ul> y cada elemento de lista debe escribirse con la etiqueta <li>. Aplicando lo anterior, el código quedaría así:
+
+//Hacer un menú de navegación en HTML	
+<ul>
+	<li><a href="#">Inicio</a></li>
+	<li><a href="#">Tutoriales</a></li>
+	<li><a href="#">Cursos</a></li>
+	<li><a href="#">Bootcamps</a></li>
+	<li><a href="#">Contacto</a></li>
+</ul>
+Como puedes ver, la etiqueta <li> incluye un enlace, que debe ser el de la página especificada en el menú en HTML y CSS.
+
+¿Cómo hacer un menú de navegación en HTML?
+Ya tienes la estructura básica del menú HTML (los elementos o páginas del menú en HTML y CSS). Ahora, empezamos a darle forma al código. Vamos a usar la etiqueta de HTML5 para los menús de navegación <nav> y, dentro de ella, escribimos nuestro menú HTML:
+
+//Hacer un menú de navegación en HTML	
+<header>
+    <nav>
+        <ul>
+		<li><a href="#">Inicio</a></li>
+		<li><a href="#">Tutoriales</a></li>
+		<li><a href="#">Cursos</a></l>
+		<li><a href="#">Bootcamps</a></li>
+		<li><a href="#">Contacto</a></li>
+	 </ul>
+    </nav>
+</header>
+De esta forma obtenemos nuestro menú básico. Como ves, este menú no tiene ningún formato y es vertical. Para hacer un menú en HTML y CSS más atractivo, debemos trabajar en el estilo en CSS.
+
+Aplicar estilo al menú de navegación con CSS
+Para hacer un menú de navegación en HTML, primero, cambiaremos el color de fondo del menú, su ancho y la forma en la que se organiza respecto a los demás elementos de la web con el siguiente código:
+
+//Hacer un menú de navegación en HTML	
+header {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+La primera línea después del header es background. Con este atributo definimos el color RGBA del fondo de la barra de menú de navegación HTML. En este caso, hemos seleccionado negro con una opacidad del 70%.
+
+La siguiente línea es el ancho al hacer un menú de navegación en HTML y lo hemos puesto para que se vea en toda la pantalla, de lado a lado.
+
+El atributo position: fixed indica que, para hacer el menú de navegación en HTML, este debe quedarse quieto; es decir, si bajamos en la web, el menú nos acompañará en todo momento.
+
+Finalmente, z-index sirve para especificar el orden en el que se amontonan los elementos. En este caso, ubica el menú sobre todos los demás elementos.
+
+A continuación, te explicamos cada uno de los bloques de código dentro de la etiqueta <nav> HTML:
+
+nav {
+  float: left;
+}
+Con este código de nav CSS, especificamos que la barra de navegación HTML debe estar alineada a la izquierda de la página.
+
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+}
+Ahora modificamos el estilo de la lista de la barra de navegación HTML de nav CSS. Con list-style especificamos la forma de la viñeta de cada elemento de la lista. Para nuestro caso, no vamos a usar ninguna forma por la que definimos esta propiedad con none.
+
+Con la propiedad overflow eliminamos los errores que se puedan dar por contenido fuera de nuestro bloque de menú de navegación en HTML.
+
+Con overflow: hidden hacemos que todo contenido fuera del bloque del menú se corte y se invisibilice.
+
+nav ul li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;;
+  font-size: 20px;
+Este fragmento de código de nav CSS es muy importante al hacer un menú de navegación en HTML. En él, establecemos que los submenús o páginas se muestran horizontalmente y no uno debajo del otro. Esto se consigue con la línea float: left para la barra de navegación HTML.
+
+La propiedad font-family indica qué tipo de fuente tendrán los menús. En este caso, existen 3 tipografías por si surge algún problema de incompatibilidad.
+
+La última línea define el tamaño de letra de cada elemento para hacer un menú de navegación en HTML.
+
+nav ul li a {
+  display: block; 
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+Es momento de trabajar los elementos anchor (a) o los enlaces. Primero lo convertiremos en un bloque con display: block. De esta forma, ya podemos agregarle un padding, lo que mejorará visualmente nuestro menú y reduciremos los errores de dimensión.
+
+Con la propiedad color especificamos el color de los enlaces, y con la línea text-decoration decidimos si queremos algún tipo de decoración, como el subrayado. En este caso no vamos a usar ninguna.
+
+nav ul li:hover {
+  background: #eca023;
+Finalmente, seleccionamos qué color queremos ver al posarnos sobre un elemento. Con la propiedad background le especificamos el color por medio del sistema HEX de colores.
+
+Resultado del menú de navegación
+Ahora ya sabemos hacer un menú de navegación en HTML decente para nuestra página web. El resultado se ve así:
+
+
+Evidentemente, podemos configurar muchas más opciones para que sea más profesional y sin errores. Sin embargo, estas son las nociones básicas para hacer un menú de navegación en HTML totalmente funcional y amigable con el usuario.
+
+Por último, te dejamos el código completo del menú HTML que acabamos de crear:
+
+header {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: #eca023;
+}
+En este post has aprendido a hacer un menú de navegación en HTML de forma básica y sencilla, pero aún queda mucho más por aprender para sofisticar tu código y hacerlo aún más bonito y funcional. Para ello, puedes aprender a dar estilo mediante CSS, lo que mejorará visiblemente los elementos de tu web. Para continuar formándote en este ámbito, te recomendamos echarle un vistazo a nuestro Desarrollo Web Full Stack Bootcamp, donde te convertiremos en un desarrollador experto en poco tiempo.
+</P>
